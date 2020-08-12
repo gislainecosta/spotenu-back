@@ -1,0 +1,42 @@
+{
+  "name": "spotenu-gislaine",
+  "version": "1.0.0",
+  "description": "Trabalho Full Stack de Fim de curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "start": "tsc && node build/index.js",
+    "url": "git+https://github.com/gislainecosta/spotenu-back.git"
+  },
+  "author": "Gislaine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gislainecosta/spotenu-back/issues"
+  },
+  "homepage": "https://github.com/gislainecosta/spotenu-back#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/knex": "^0.16.1",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^14.0.27",
+    "@types/uuid": "^8.3.0",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.4",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "serveless": "0.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "uuid": "^8.3.0"
+  }
+}
