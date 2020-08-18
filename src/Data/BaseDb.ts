@@ -2,7 +2,7 @@ import knex from "knex"
 import Knex from "knex"
 
 
-export class BaseDataBase {
+export default class BaseDataBase {
     private static connection: knex | null = null
 
     protected getconnection(): Knex {
