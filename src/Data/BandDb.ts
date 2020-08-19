@@ -1,6 +1,6 @@
 import knex from "knex";
 import BaseDatabase from "./BaseDb";
-import { BandDTO } from "../Model/UserDTO"
+import { BandDTO } from "../Model/User"
 
 export default class BandDb extends BaseDatabase {
 

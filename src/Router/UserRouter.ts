@@ -5,5 +5,6 @@ const userRouter = express.Router();
 
 userRouter.post("/", new UserController().signupUser)
 userRouter.post("/admin", new UserController().signupAdmin)
+userRouter.post("/login", new UserController().login)
 
 export default userRouter;
