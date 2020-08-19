@@ -14,6 +14,23 @@ interface UserSignupDTO {
     role: UserType;
 };
 
+
+interface UserReqDTO {
+    name: string;
+    nickname: string;
+    email: string;
+    password: string;
+    role: UserType;
+};
+
+interface AdminReqDTO {
+    name: string;
+    nickname: string;
+    email: string;
+    password: string;
+    role: UserType;
+    token: string;
+};
 interface BandDTO{
     id: string;
     name: string;
@@ -96,6 +113,10 @@ class User {
     setAproved(aproved: number) {
         this.aproved = aproved;
     }
+
+    static toUserModel(user: any): User {
+        return new User(user.id, user.name, user.email, user.password);
+    }
 }
 
-export { User, UserSignupDTO, UserIdDTO, UserType, BandDTO }
+export { User, UserReqDTO, AdminReqDTO, UserSignupDTO, UserIdDTO, UserType, BandDTO }

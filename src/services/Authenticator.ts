@@ -5,7 +5,7 @@ interface AuthenticationData {
   role: string;
 }
 export default class Authenticator {
-  private static EXPIRES_IN = "10min";
+  private static EXPIRES_IN = "30min";
 
   public generateToken = (input: AuthenticationData, expiresIn: string = Authenticator.EXPIRES_IN): string => {
     const token = jwt.sign(
